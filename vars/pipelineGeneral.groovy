@@ -13,7 +13,7 @@ def call(Map param){
         } */
 
         environment{
-            PROJECT = "${env.GIT_URL}".replaceAll('.+/(.+)\\.git', '$1')toLowerCase()
+            PROJECT = "${env.GIT_URL}".replaceAll('.+/(.+)\\.git', '$1').toLowerCase()
         }
 
         stage('Construccion App') {
