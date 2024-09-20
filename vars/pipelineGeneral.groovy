@@ -9,7 +9,7 @@ def call(){
         }
         
         environment{
-            projectGitName = "${env.UrlGitHub}".replaceAll('.+/(.+)\\.git', '$1').toLowerCase()
+            projectName = "${env.UrlGitHub}".replaceAll('.+/(.+)\\.git', '$1').toLowerCase()
         }
 
         stages{
